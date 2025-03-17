@@ -1,0 +1,195 @@
+/* Contenedor principal */
+.page25-container {
+    position: relative;
+    width: 95%;
+    height: 100vh;
+    margin-top: -640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Imagen de fondo */
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../public/imgs/fondo2.jpg"); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Para que esté detrás del contenido */
+  }
+  
+/* Botones laterales */
+.side-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    padding: 11px 7px; /* Más grande y con más espacio */
+    border-radius: 25px; /* Bordes más redondeados */
+    cursor: pointer;
+    font-size: 13px; /* Texto más grande */
+    font-weight: bold; /* Texto en negrita */
+    z-index: 10;
+    transition: all 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+  }
+  
+  .side-button.left {
+    left: -270px;
+    background: linear-gradient(135deg, #4caf50, #81c784); /* Gradiente verde */
+  }
+  
+  .side-button.right {
+    right: -180px;
+    background: linear-gradient(135deg, #f44336, #e57373); /* Gradiente rojo */
+  }
+  
+  .side-button:hover {
+    transform: translateY(-50%) scale(1.05); /* Efecto de escala al hacer hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer hover */
+  }
+  
+  .side-button.left:hover {
+    background: linear-gradient(135deg, #81c784, #4caf50); /* Invertir gradiente al hacer hover */
+  }
+  
+  .side-button.right:hover {
+    background: linear-gradient(135deg, #e57373, #f44336); /* Invertir gradiente al hacer hover */
+  }
+  
+  .side-button:active {
+    transform: translateY(-50%) scale(0.95); /* Efecto de clic */
+  }
+  
+  /* Cuadro central */
+  .video-box {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+  }
+  
+  /* Lista de videos */
+  .video-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 2px;
+  }
+  
+  /* Botones de video */
+  .video-button {
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .video-button:hover {
+    background-color: #b38f2b;
+  }
+  
+  /* Reproductor de video */
+  .video-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  video {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Botón para regresar al menú */
+  .back-buttons {
+    position: absolute;
+    top: 20px;
+    left: -200px;
+    background-color: #d4af37;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .back-button:hover {
+    background-color: #b38f2b;
+  }
+  
+  /* Ventana modal */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .modal-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .modal-controls button {
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .modal-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .close-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .close-button:hover {
+    background-color: #ff1a1a;
+  }

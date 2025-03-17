@@ -1,0 +1,352 @@
+.page-11-container {
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la pantalla */
+    overflow: hidden;
+    position: relative;
+    display: flex; /* Usar flexbox para alinear el ramo y el texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+  }
+  
+  .container {
+    position: relative;
+    left: -10%; /* Mover el ramo ligeramente a la izquierda */
+  }
+  
+  .glass {
+    height: 400px; /* Reducido para ajustarse mejor */
+    width: 300px; /* Reducido para ajustarse mejor */
+    background: #122139;
+    border-radius: 150px 150px 0px 0px; /* Ajustado para coincidir con el tamaño reducido */
+    position: relative;
+  }
+  
+  .glass:before {
+    content: "";
+    height: 20px; /* Reducido */
+    width: 20px; /* Reducido */
+    transform-origin: center;
+    border: 12px solid #122139; /* Reducido */
+    border-radius: 100%;
+    position: absolute;
+    left: 128px; /* Ajustado */
+    top: -37px; /* Ajustado */
+  }
+  
+  .glass:after {
+    content: "";
+    position: absolute;
+    height: 8px; /* Reducido */
+    width: 300px; /* Reducido */
+    background: #a52a2a;
+    top: 100%;
+    left: 0%;
+  }
+  
+  .shine {
+    width: 13px; /* Reducido */
+    height: 165px; /* Reducido */
+    background: white;
+    opacity: 0.2;
+    position: absolute;
+    left: 85%;
+    top: 100px; /* Ajustado */
+    border-radius: 50px; /* Reducido */
+    z-index: 10;
+  }
+  
+  .shine:before {
+    content: "";
+    width: 13px; /* Reducido */
+    height: 20px; /* Reducido */
+    position: absolute;
+    background: white;
+    top: 182px; /* Ajustado */
+    border-radius: 50px; /* Reducido */
+  }
+  
+  .petals > div {
+    position: absolute;
+    background: #d52d58;
+    width: 42px; /* Reducido */
+    height: 60px; /* Reducido */
+    top: 100px; /* Ajustado */
+    transition: all 0.5s ease-out;
+  }
+  
+  .petals > div:nth-child(1) {
+    border-radius: 8px; /* Reducido */
+    box-shadow: 0px 0px 30px rgba(245, 148, 184, 1); /* Reducido */
+    left: 134px; /* Ajustado */
+    top: 100px; /* Ajustado */
+    background: #d52d58;
+  }
+  
+  .petals > div:nth-child(2),
+  .petals > div:nth-child(4),
+  .petals > div:nth-child(6) {
+    background: #b81b43;
+    left: 115px; /* Ajustado */
+    border-radius: 0px 25px 0px 25px; /* Reducido */
+    transform-origin: bottom right;
+  }
+  
+  .petals > div:nth-child(3),
+  .petals > div:nth-child(5),
+  .petals > div:nth-child(7) {
+    background: #b81b43;
+    left: 150px; /* Ajustado */
+    border-radius: 25px 0px 25px 0px; /* Reducido */
+    transform-origin: bottom left;
+  }
+  
+  .petals > div:nth-child(2) {
+    z-index: 5;
+    background: #ab1a3f;
+    top: 109px; /* Ajustado */
+    height: 65px; /* Reducido */
+    box-shadow: 0px 0px 30px rgba(245, 148, 184, 0.5); /* Reducido */
+    animation: bloom2 3s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  .petals > div:nth-child(3) {
+    z-index: 4;
+    background: #ab1a3f;
+    top: 109px; /* Ajustado */
+    height: 65px; /* Reducido */
+    box-shadow: 0px 0px 30px rgba(245, 148, 184, 0.5); /* Reducido */
+    animation: bloom3 3s ease-in-out, glowing 2.5s ease-in-out infinite;
+    animation-fill-mode: forwards;
+  }
+  
+  .petals > div:nth-child(4) {
+    z-index: 3;
+    background: #b81b43;
+    top: 106px; /* Ajustado */
+    height: 68px; /* Reducido */
+    box-shadow: 0px 0px 30px rgba(245, 148, 184, 0.5); /* Reducido */
+    animation: bloom4 3s ease-in-out, glowing 2.5s ease-in-out infinite;
+    animation-fill-mode: forwards;
+  }
+  
+  .petals > div:nth-child(5) {
+    z-index: 2;
+    background: #b81b43;
+    top: 106px; /* Ajustado */
+    height: 68px; /* Reducido */
+    box-shadow: 0px 0px 30px rgba(245, 148, 184, 0.5); /* Reducido */
+    animation: bloom5 3s ease-in-out, glowing 2.5s ease-in-out infinite;
+    animation-fill-mode: forwards;
+  }
+  
+  .petals > div:nth-child(6) {
+    z-index: 1;
+    background: #c9204b;
+    top: 100px; /* Ajustado */
+    height: 65px; /* Reducido */
+    box-shadow: 0px 0px 30px rgba(245, 148, 184, 0.3); /* Reducido */
+    animation: bloom6 3s ease-in-out, glowing 2.5s ease-in-out infinite;
+    animation-fill-mode: forwards;
+  }
+  
+  .petals > div:nth-child(7) {
+    z-index: 0;
+    background: #c9204b;
+    top: 100px; /* Ajustado */
+    height: 65px; /* Reducido */
+    box-shadow: 0px 0px 30px rgba(245, 148, 184, 0.3); /* Reducido */
+    animation: bloom7 3s ease-in-out, glowing 2.5s ease-in-out infinite;
+    animation-fill-mode: forwards;
+  }
+  
+  .deadPetals > div {
+    position: absolute;
+    background: #d52d58;
+    width: 10px; /* Reducido */
+    height: 8px; /* Reducido */
+    top: 100px; /* Ajustado */
+    border-radius: 0px 15px 0px 15px; /* Reducido */
+    box-shadow: 0px 0px 15px rgba(245, 148, 184, 0.5); /* Reducido */
+    transition: all 0.5s ease-out;
+  }
+  
+  .deadPetals > div:nth-child(1) {
+    left: 50px; /* Ajustado */
+    transform: rotate(-30deg);
+    animation: falling 20s 4s ease-in-out infinite;
+  }
+  
+  .deadPetals > div:nth-child(2) {
+    left: 100px; /* Ajustado */
+    transform: rotate(-30deg);
+    animation: falling 20s 8s ease-in-out infinite;
+  }
+  
+  .deadPetals > div:nth-child(3) {
+    left: 150px; /* Ajustado */
+    transform: rotate(-30deg);
+    animation: falling 20s 12s ease-in-out infinite;
+  }
+  
+  .deadPetals > div:nth-child(4) {
+    left: 200px; /* Ajustado */
+    transform: rotate(-30deg);
+    animation: falling 20s 16s ease-in-out infinite;
+  }
+  
+  .leaves > div:nth-last-child(1) {
+    position: absolute;
+    width: 28px; /* Reducido */
+    height: 15px; /* Reducido */
+    background: #338f37;
+    top: 167px; /* Ajustado */
+    left: 139px; /* Ajustado */
+    border-radius: 50px; /* Reducido */
+  }
+  
+  .leaves > div:nth-child(1) {
+    position: absolute;
+    width: 8px; /* Reducido */
+    height: 195px; /* Reducido */
+    background: #054c05;
+    top: 154px; /* Ajustado */
+    left: 150px; /* Ajustado */
+    border-radius: 0 0 50px 50px; /* Reducido */
+  }
+  
+  .leaves > div:nth-child(2) {
+    position: absolute;
+    width: 30px; /* Reducido */
+    height: 50px; /* Reducido */
+    top: 206px; /* Ajustado */
+    border-radius: 5px 40px 20px 40px; /* Reducido */
+    background: #054c05;
+    transform-origin: bottom;
+    transform: rotate(-30deg);
+    left: 127px; /* Ajustado */
+    box-shadow: inset 5px 5px #066406; /* Reducido */
+  }
+  
+  .leaves > div:nth-child(3) {
+    position: absolute;
+    width: 30px; /* Reducido */
+    height: 50px; /* Reducido */
+    top: 180px; /* Ajustado */
+    border-radius: 40px 1px 40px 20px; /* Reducido */
+    background: #054c05;
+    transform-origin: bottom;
+    transform: rotate(30deg);
+    left: 150px; /* Ajustado */
+    box-shadow: inset -5px 5px #066406; /* Reducido */
+  }
+  
+  .thorns > div {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 100px; /* Ajustado */
+  }
+  
+  .thorns > div:nth-child(odd) {
+    border-top: 8px solid transparent; /* Reducido */
+    border-bottom: 8px solid transparent; /* Reducido */
+    border-left: 8px solid #054c05; /* Reducido */
+    left: 158px; /* Ajustado */
+  }
+  
+  .thorns > div:nth-child(even) {
+    border-top: 8px solid transparent; /* Reducido */
+    border-bottom: 8px solid transparent; /* Reducido */
+    border-right: 8px solid #054c05; /* Reducido */
+    left: 143px; /* Ajustado */
+  }
+  
+  .thorns > div:nth-child(1) {
+    top: 233px; /* Ajustado */
+  }
+  
+  .thorns > div:nth-child(2) {
+    top: 195px; /* Ajustado */
+  }
+  
+  .thorns > div:nth-child(4) {
+    top: 263px; /* Ajustado */
+  }
+  
+  @keyframes bloom2 {
+    50% {
+      transform: rotate(-90deg);
+      top: 200px; /* Ajustado */
+      left: 75px; /* Ajustado */
+    }
+  
+    100% {
+      transform: rotate(-60deg);
+      top: 308px; /* Ajustado */
+      left: 50px; /* Ajustado */
+      background: #71122a;
+      box-shadow: 0px 0px 0px rgba(245, 148, 184, 0);
+    }
+  }
+  
+  @keyframes bloom3 {
+    100% {
+      transform: rotate(50deg);
+    }
+  }
+  
+  @keyframes bloom4 {
+    100% {
+      transform: rotate(-25deg);
+    }
+  }
+  
+  @keyframes bloom5 {
+    100% {
+      transform: rotate(25deg);
+    }
+  }
+  
+  @keyframes bloom6 {
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  
+  @keyframes bloom7 {
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  @keyframes glowing {
+    50% {
+      background: #d7365f;
+      box-shadow: 0px 0px 30px rgba(245, 148, 184, 1); /* Reducido */
+    }
+  }
+  
+  @keyframes falling {
+    20% {
+      top: 168px; /* Ajustado */
+      background: #9d193b;
+      box-shadow: 0px 0px 0px rgba(245, 148, 184, 0);
+    }
+  
+    100% {
+      top: 168px; /* Ajustado */
+      opacity: 0;
+    }
+  }
+  
+  .texto {
+    position: absolute;
+    right: 10%; /* Mover el texto al lado derecho */
+    top: 50%; /* Centrar verticalmente */
+    transform: translateY(-50%); /* Ajustar el centrado vertical */
+    color: white;
+    font-size: 20px; /* Reducido */
+    text-align: left; /* Alinear el texto a la izquierda */
+    width: 30%; /* Ancho del contenedor de texto */
+  }
