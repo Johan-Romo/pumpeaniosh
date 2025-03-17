@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 function Page25() {
   // Lista de videos
   const videos = [
-    { id: 1, title: "Video 1", src: "/imgs/video1.mp4" },
-    { id: 2, title: "Video 2", src: "/imgs/video2.mp4" },
-    { id: 3, title: "Video 3", src: "/imgs/video3.mp4" },
+    { id: 1, title: "Video 1", src: "/video1.mp4" },
+    { id: 2, title: "Video 2", src: "/video2.mp4" },
+    { id: 3, title: "Video 3", src: "/video3.mp4" },
   ];
 
   // Estado para guardar el video seleccionado
