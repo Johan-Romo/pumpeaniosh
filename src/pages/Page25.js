@@ -29,7 +29,7 @@ function Page25() {
     "8. La forma en la que hablas de mí",
     "9. Tu paciencia",
     "10. Tus cejas",
-    "11. Tus ojos",
+    "11. Tus lindos ojos",
     "12. La forma en la que nuestras manos encajan",
     "13. Tu lado protector",
     "14. Me siento seguro contigo",
