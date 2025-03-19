@@ -6,7 +6,7 @@ function Page13() {
     <div className="page-11-container">
          <Link to="/" className="back-button">
       🏠 Regresar al menú
-    </Link>
+        </Link>
       <div className="container">
         <div className="glass">
           <div className="shine"></div>
@@ -39,8 +39,9 @@ function Page13() {
           <div></div>
         </div>
       </div>
-      <div>
-        <h4 className="texto">Mi amor por ti durará hasta que caiga el último pétalo ❤️</h4>
+      <div className="textoder" >
+        <h1>Porque eres la definición de lo que siempre soñé sin saberlo</h1>
+        <h4 className="texto">Antes de conocerte, no sabía exactamente qué buscaba en una persona, pero ahora lo tengo claro.Tu manera de ser, tu esencia, todo en ti es exactamente lo que necesitaba en mi vida. Eres el amor que no sabía que me hacía falta, la persona que llegó a llenar cada espacio vacío en mi corazón. No hay nada que cambiaría, nada que pediría diferente, porque eres perfecta tal como eres incluso con tus imperfecciones. </h4>
       </div>
     </div>
   );

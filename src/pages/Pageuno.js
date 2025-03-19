@@ -26,10 +26,10 @@ function Page1() {
 
           <div className="address">
             <p>
-              <span>To:</span> <span>My Love</span>
+              <span>To:</span> <span>Heidy</span>
             </p>
             <p>
-              <span>From:</span> <span>Your Favorite Person</span>
+              <span>From:</span> <span>Johan</span>
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ function Page1() {
               className="custom-image"
             />
             <p>
-              Ser un ser de luz que llegó a mi vida. Desde que entraste a mi vida, todo cambió y mucho, no sabía con quien trataba, estaba algo confundido. Pero me demostraste mucho mas de lo que yo necesitaba y entendí que los angeles no son seres mitológicos pues tenia a uno a lado mio que me entragaba todo. Ese ángel eras tú. {" "}
+            <h1>Ser un ser de luz que llegó a mi vida </h1> Desde que entraste a mi vida, todo cambió y mucho, no sabía con quien trataba, estaba algo confundido. Pero me demostraste mucho mas de lo que yo necesitaba y entendí que los angeles no son seres mitológicos pues tenia a uno a lado mio que me entragaba todo. Ese ángel eras tú. {" "}
               <span className="highlight">Eres</span>
             </p>
             <img

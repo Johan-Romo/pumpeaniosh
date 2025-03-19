@@ -54,10 +54,12 @@ function Page6() {
 
       {/* Contenedor blanco con texto */}
       <div className="text-container">
-        <h1>¡Feliz Cumpleaños!</h1>
+        <h1>Siempre calmas mis tormentas</h1>
         <p>
-          Este girasol representa la luz y la felicidad que traes a mi vida. Que
-          este día esté lleno de amor, risas y momentos inolvidables.
+        He tenido tantos problemas que siempre han atormentado a mi cabeza, situaciones que yo no he podido controlar pero de ti he tenido el apoyo suficiente para no caerme. Un consejo,  un enojo pequeñito o una charla contigo me ha dado suficientes fuerzas para no perder la cordura.
+        Hay días en los que todo parece salir mal, en los que el estrés, la ansiedad o el cansancio me abruman. Pero cuando estoy contigo, todo se vuelve más bonito.Siempre buscabas  la manera de aliviar, de hacerme sentir en paz.
+
+        A veces con tus palabras. Otras veces simplemente con tu presencia. 
         </p>
       </div>
     </div>

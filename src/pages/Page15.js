@@ -39,8 +39,9 @@ function Page15() {
           <div></div>
         </div>
       </div>
-      <div>
-        <h4 className="texto">Mi amor por ti durará hasta que caiga el último pétalo ❤️</h4>
+      <div className="textoder" >
+        <h1>Porque en tus momentos más tristes, sigues siendo una luz para los demás</h1>
+        <h4 className="texto">Aunque a veces sientas que se te cae el mundo y demasiado estres, quiero que sepas que incluso cuando estás triste, tu luz nunca se apaga. Que a pesar de sentirse decaída, nunca dejas de ser la increíble persona que eres. La forma en que te preocupas por tu familia y cómo te ofreces a ayudar en lo que sea necesario me demuestra lo que eres. </h4>
       </div>
     </div>
   );

@@ -26,10 +26,10 @@ function Page3() {
 
           <div className="address">
             <p>
-              <span>To:</span> <span>My Love</span>
+              <span>To:</span> <span>Heidy</span>
             </p>
             <p>
-              <span>From:</span> <span>Your Favorite Person</span>
+              <span>From:</span> <span>Johan</span>
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ function Page3() {
               className="custom-image"
             />
             <p>
-              Eres una mujer fuerte. Sé poco sobre lo que ha pasado en tu vida, se que fue o es complicada, se que no has tenido mucha tranquilidad, se que hay muchos asuntos sin resolver pero siempre te he visto fuerte, nunca te he visto rendirte, siempre estas intentandolo todo y eso es lo que admiro de ti.  {" "}
+            <h1>Eres una mujer fuerte</h1> Sé poco sobre lo que ha pasado en tu vida, se que fue o es complicada, se que no has tenido mucha tranquilidad, se que hay muchos asuntos sin resolver pero siempre te he visto fuerte, nunca te he visto rendirte, siempre estas intentandolo todo y eso es lo que admiro de ti.  {" "}
               <span className="highlight">CORAZON</span>
             </p>
             <img

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css"; // Importa los estilos CSS
+import BirthdayFireworks from './pages/BirthdayFireworks';
 
 function Home({ isPlaying, startMusic }) {
   const [showAviso, setShowAviso] = useState(false); // Estado para controlar la visibilidad del aviso
@@ -43,12 +44,16 @@ function Home({ isPlaying, startMusic }) {
 
       {/* Título y texto centrados en la parte superior */}
       <div className="text-container">
-        <h1 className="home-title">🎉 FELIZ CUMPLEAÑOS RASHELL 🎉</h1>
+      <div className="fireworks-container">
+    <BirthdayFireworks />
+    </div>
+      { /*<h1 className="home-title">🎉 FELIZ CUMPLEAÑOS🎉</h1>*/}
         <h2 className="home-subtitle">
-          Solamente quiero desearte lo mejor en este día, porque te lo mereces.
+          Solamente paso por aquí quiero desearte lo mejor en este día, que Dios te bendiga y que sigas cumpliendo muchos más.
         </h2>
         <h2 className="home-subtitle">
-          Aquí 23 razones por las cuales eres importante en mi vida:
+          Aquí te dejo mis 23 razones por las cuales eres importante en mi vida, 23 razones como los añitos que cumples.
+          Espero te guste. Con mucho cariño: Johan.
         </h2>
       </div>
 

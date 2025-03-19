@@ -54,10 +54,9 @@ function Page7() {
 
       {/* Contenedor blanco con texto */}
       <div className="text-container">
-        <h1>¡Feliz Cumpleaños!</h1>
+        <h1> Ser una mujer demasiado hermosa.</h1>
         <p>
-          Este girasol representa la luz y la felicidad que traes a mi vida. Que
-          este día esté lleno de amor, risas y momentos inolvidables.
+        Te dije que desde la primera vez que te ví en las oficinas, mis ojos solo fueron para ti. Tus ojos,  tu cara, tu cuerpo, tu cabello negro, tu sonrisa, tus manos, tu forma de vestir, la manera en que eres linda sin maquillarte, la manera en que llevas tus carteras manillas o anillo, tu color de piel, tus lunares, tus 2 dientecitos mas grandes que los otros,  tu cintura, tu "flacura",  tu nariz respingadita, tus cachetes al sonreir y todo lo que tienes, son cosas que para mis ojos, eran consideradas una linda obra de arte. Y tuve la suerte de para mí, estar con la mujer mas hermosa de este planeta.
         </p>
       </div>
     </div>

@@ -54,10 +54,9 @@ function Page9() {
 
       {/* Contenedor blanco con texto */}
       <div className="text-container">
-        <h1>¡Feliz Cumpleaños!</h1>
+        <h1>Porque siempre estás ahí para mí y los demás</h1>
         <p>
-          Este girasol representa la luz y la felicidad que traes a mi vida. Que
-          este día esté lleno de amor, risas y momentos inolvidables.
+        Hay muchas personas en la vida que te dicen estar ahi, que prometen apoyo y compañía, pero cuando realmente las necesitas, desaparecen. Tú no. Tú siempre estuviste ahí, sin importar la hora, el lugar o la situación. Nunca me haces sentir solo, y eso es algo que valoro más de lo que puedo expresar con palabras.
         </p>
       </div>
     </div>

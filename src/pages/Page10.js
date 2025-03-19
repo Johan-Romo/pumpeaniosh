@@ -54,10 +54,9 @@ function Page10() {
 
       {/* Contenedor blanco con texto */}
       <div className="text-container">
-        <h1>¡Feliz Cumpleaños!</h1>
+        <h1> Por tu inteligencia</h1>
         <p>
-          Este girasol representa la luz y la felicidad que traes a mi vida. Que
-          este día esté lleno de amor, risas y momentos inolvidables.
+        Cada vez que hablo contigo me doy cuenta lo inteligente que eres. Y no me refiero solamente a lo académico sino a tu inteligencia en todos los aspectos de la vida. Me encanta como ves cada situación, cómo logras ver soluciones donde otros como yo solo ven problemas. Y es por tu inteligencia igual que has llegado muy lejos, a punto de ser una ingeniera.
         </p>
       </div>
     </div>

@@ -26,10 +26,10 @@ function Page2() {
 
           <div className="address">
             <p>
-              <span>To:</span> <span>My Love</span>
+              <span>To:</span> <span>Heidy</span>
             </p>
             <p>
-              <span>From:</span> <span>Your Favorite Person</span>
+              <span>From:</span> <span>Johan</span>
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ function Page2() {
               className="custom-image"
             />
             <p>
-              Eres una mujer única. Desde que te conocí siempre vi algo diferente en ti, algo que nunca he visto en nadie. Para ser sincero mujeres como tu ya no existen, leales, bondosas, guerrera, decicida pero nerviosa , fuerte pero sensible y con un corazón lleno de amor. Eres Heidy Benalcazar y eso especial dentro tuyo es lo que te define,  {" "}
+              <h1>Eres una mujer única</h1> Desde que te conocí siempre vi algo diferente en ti, algo que nunca he visto en nadie. Para ser sincero mujeres como tu ya no existen, leales, bondosas, guerrera, decicida pero nerviosa , fuerte pero sensible y con un corazón lleno de amor. Eres Heidy Benalcazar y eso especial dentro tuyo es lo que te define,  {" "}
               <span className="highlight">MI</span>
             </p>
             <img

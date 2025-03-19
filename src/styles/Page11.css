@@ -12,6 +12,9 @@
     position: relative;
     left: -10%; /* Mover el ramo ligeramente a la izquierda */
   }
+
+  
+  
   
   .glass {
     height: 400px; /* Reducido para ajustarse mejor */
@@ -349,4 +352,15 @@
     font-size: 20px; /* Reducido */
     text-align: left; /* Alinear el texto a la izquierda */
     width: 30%; /* Ancho del contenedor de texto */
+  }
+  .textoder h1{
+ 
+    position: absolute;
+    right: 10%; /* Mover el texto al lado derecho */
+    top: 20%; /* Centrar verticalmente */
+    transform: translateY(-50%); /* Ajustar el centrado vertical */
+    color: rgb(0, 0, 0);
+    font-size: 40px; /* Reducido */
+    text-align: left; /* Alinear el texto a la izquierda */
+    width: 30%; 
   }

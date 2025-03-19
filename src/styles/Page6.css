@@ -10,19 +10,19 @@
 
   .page-6-container .text-container {
     position: absolute;
-    right: 65%; /* Ajusta la posición del contenedor de texto */
-    top: 50%;
+    right:  62%; /* Ajusta la posición del contenedor de texto */
+    top: 55%;
     transform: translateY(-50%);
     background-color: white;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
+    max-width: 450px;
     text-align: center;
   }
   
   .page-6-container .text-container h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #333;
     margin-bottom: 1rem;
   }

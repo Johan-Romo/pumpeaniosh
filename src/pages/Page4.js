@@ -26,10 +26,10 @@ function Page4() {
 
           <div className="address">
             <p>
-              <span>To:</span> <span>My Love</span>
+              <span>To:</span> <span>Heidy</span>
             </p>
             <p>
-              <span>From:</span> <span>Your Favorite Person</span>
+              <span>From:</span> <span>Johan</span>
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ function Page4() {
               className="custom-image"
             />
             <p>
-              Me enseñaste el significado de amar. Yo he estado con otras personas y créeme yo en realidad no sabia que era sentirse amado. Desde el primer día que esto empezó, desde el primer acto de amor, sin mentir, por primera vez sentí mariposas, sentí lo que es el amor y lo que es amar en realidad   {" "}
+            <h1>Me enseñaste el significado de amar</h1> Yo he estado con otras personas y créeme yo en realidad no sabia que era sentirse amado. Desde el primer día que esto empezó, desde el primer acto de amor, sin mentir, por primera vez sentí mariposas, sentí lo que es el amor y lo que es amar en realidad   {" "}
               <span className="highlight">Y</span>
             </p>
             <img

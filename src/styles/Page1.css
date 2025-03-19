@@ -9,7 +9,7 @@
 /* Estilos para el botón de regreso al menú */
 .back-button {
      /* Posición fija en la pantalla */
-    margin-top: 70px; /* Distancia desde la parte superior */
+    margin-top: 10px; /* Distancia desde la parte superior */
     left: 30px; /* Distancia desde la izquierda */
     padding: 10px 20px; /* Espaciado interno */
     background-color: #d14d44; /* Color de fondo */
@@ -267,6 +267,11 @@ body {
   font-weight: bold;
   width: 32ch;
   color: var(--letter-clr-text);
+}
+
+.letter h1 {
+  font-size: var(--letter-font-size);
+  color: black;
 }
 
 .custom-image {

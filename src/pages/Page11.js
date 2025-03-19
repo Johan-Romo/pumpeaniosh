@@ -39,8 +39,9 @@ function Page11() {
           <div></div>
         </div>
       </div>
-      <div>
-        <h4 className="texto">Mi amor por ti durará hasta que caiga el último pétalo ❤️</h4>
+      <div className="textoder" >
+        <h1>Porque me amas de una manera única</h1>
+        <h4 className="texto">Desde el primer momento en que empezamos a estar juntos supe que tu forma de amar era diferente a cualquier otra que hubiera conocido antes. No era un amor superficial falso ni pasajero, sino un amor profundo, real, que se demuestra en cada palabra o acción, en cada gesto, en cada mirada. Lo sentia en la forma en que te preocupas por mí, en cómo te interesa saber cómo estoy, en cómo siempre buscas maneras de hacerme sentir bien.</h4>
       </div>
     </div>
   );

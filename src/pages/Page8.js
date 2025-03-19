@@ -54,10 +54,9 @@ function Page8() {
 
       {/* Contenedor blanco con texto */}
       <div className="text-container">
-        <h1>¡Feliz Cumpleaños!</h1>
+        <h1>Porque tu sonrisa ilumina mi mundo y el de los demás</h1>
         <p>
-          Este girasol representa la luz y la felicidad que traes a mi vida. Que
-          este día esté lleno de amor, risas y momentos inolvidables.
+        Me encanta la forma en que tu cara se pone cuando te ríes de algo, cuando te emocionas con algo simple, cuando disfrutas de los pequeños detalles. Es una sonrisa que me hace sentir afortunado de tenerte, que me hace querer verte feliz todos los días, que me motiva a hacer lo que sea necesario para que nunca falten motivos para que sonrías. Y lo que más amo es que tu sonrisa no es solo hermosa, sino que siento que hay una niña chiquita en tu corazón.
         </p>
       </div>
     </div>

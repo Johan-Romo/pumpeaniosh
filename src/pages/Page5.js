@@ -26,10 +26,10 @@ function Page5() {
 
           <div className="address">
             <p>
-              <span>To:</span> <span>My Love</span>
+              <span>To:</span> <span>Heidy</span>
             </p>
             <p>
-              <span>From:</span> <span>Your Favorite Person</span>
+              <span>From:</span> <span>Johan</span>
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ function Page5() {
               className="custom-image"
             />
             <p>
-                Me haces ver la belleza en las cosas pequeñas. Yo era una persona muy ambiciosa, pense que entre mas grandes, lujosas o lindas las cosas seria mejor pero no, tu me hiciste ver que con algo tan pequeño se puede hacer feliz a la otra persona, un dulce, un beso, una manzana o un detalle{" "}
+            <h1> Me haces ver la belleza en las cosas pequeñas</h1> Yo era una persona muy ambiciosa, pense que entre mas grandes, lujosas o lindas las cosas seria mejor pero no, tu me hiciste ver que con algo tan pequeño se puede hacer feliz a la otra persona, un dulce, un beso, una manzana o un detalle{" "}
               <span className="highlight">VIDA</span>
             </p>
             <img

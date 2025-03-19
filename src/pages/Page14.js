@@ -39,8 +39,9 @@ function Page14() {
           <div></div>
         </div>
       </div>
-      <div>
-        <h4 className="texto">Mi amor por ti durará hasta que caiga el último pétalo ❤️</h4>
+      <div className="textoder" >
+        <h1>Porque tu mirada tiene un brillo que hipnotiza</h1>
+        <h4 className="texto">Tus ojitos son preciosos y grandotes. No sé si es el brillo que tienen y más cuando hablas de algo que amas, te gusta o te interesa y la ternura que transmiten cuando me miras o la intensidad con la que me miran cuando te enojas</h4>
       </div>
     </div>
   );
