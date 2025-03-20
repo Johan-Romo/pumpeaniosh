@@ -27,7 +27,6 @@ import Page23 from "./pages/Page23";
 import Page24 from "./pages/Page24";
 import Page25 from "./pages/Page25";
 
-
 function App() {
   const [isPlaying, setIsPlaying] = useState(false); // Estado para controlar la reproducción de la música
   const [currentSongIndex, setCurrentSongIndex] = useState(0); // Índice de la canción actual
@@ -68,21 +67,6 @@ function App() {
     };
   }, []);
 
-  // Efecto para manejar el cierre de la pestaña y eliminar "valorAceptado"
-  useEffect(() => {
-    const handleBeforeUnload = () => {
-      localStorage.removeItem("valorAceptado");
-    };
-
-    // Agregar evento para detectar cuando se cierra la pestaña o ventana
-    window.addEventListener("beforeunload", handleBeforeUnload);
-
-    // Limpiar el evento cuando el componente se desmonta
-    return () => {
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, []);
-
   // Función para iniciar la música
   const startMusic = () => {
     if (audioRef.current) {
@@ -90,6 +74,19 @@ function App() {
       setIsPlaying(true);
     }
   };
+
+  // Borra la clave "valorAceptado" cuando se cierra la pestaña
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      localStorage.removeItem("valorAceptado");
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
 
   return (
     <Router>
