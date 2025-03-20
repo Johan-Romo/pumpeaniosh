@@ -40,7 +40,6 @@ function App() {
     "/imgs/cancion3.mp3",
   ];
 
-  
   // Configura el audio para que se reproduzca en secuencia
   useEffect(() => {
     if (audioRef.current) {
@@ -69,6 +68,21 @@ function App() {
     };
   }, []);
 
+  // Efecto para manejar el cierre de la pestaña y eliminar "valorAceptado"
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      localStorage.removeItem("valorAceptado");
+    };
+
+    // Agregar evento para detectar cuando se cierra la pestaña o ventana
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    // Limpiar el evento cuando el componente se desmonta
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
+
   // Función para iniciar la música
   const startMusic = () => {
     if (audioRef.current) {
@@ -76,19 +90,6 @@ function App() {
       setIsPlaying(true);
     }
   };
-
-    // 🔥 Aquí se borra "valorAceptado" al cerrar la pestaña
-    useEffect(() => {
-      const handleUnload = () => {
-        localStorage.removeItem("valorAceptado");
-      };
-  
-      window.addEventListener("beforeunload", handleUnload);
-  
-      return () => {
-        window.removeEventListener("beforeunload", handleUnload);
-      };
-    }, []);
 
   return (
     <Router>
@@ -126,7 +127,6 @@ function App() {
         <Route path="/page/23" element={<Page23 />} />
         <Route path="/page/24" element={<Page24 />} />
         <Route path="/page/25" element={<Page25 />} />
-
       </Routes>
     </Router>
   );
