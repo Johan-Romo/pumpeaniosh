@@ -40,6 +40,7 @@ function App() {
     "/imgs/cancion3.mp3",
   ];
 
+  
   // Configura el audio para que se reproduzca en secuencia
   useEffect(() => {
     if (audioRef.current) {
@@ -75,6 +76,19 @@ function App() {
       setIsPlaying(true);
     }
   };
+
+    // 🔥 Aquí se borra "valorAceptado" al cerrar la pestaña
+    useEffect(() => {
+      const handleUnload = () => {
+        localStorage.removeItem("valorAceptado");
+      };
+  
+      window.addEventListener("beforeunload", handleUnload);
+  
+      return () => {
+        window.removeEventListener("beforeunload", handleUnload);
+      };
+    }, []);
 
   return (
     <Router>
