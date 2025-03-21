@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react"; // Importa Vercel Analytics
+
 import Home from "./Home";
 import Page1 from "./pages/Pageuno";
 import Page2 from "./pages/Page2";
@@ -134,6 +136,7 @@ function App() {
         <Route path="/page/25" element={<Page25 />} />
         <Route path="/page/26" element={<Page26 />} />
       </Routes>
+      <Analytics />
     </Router>
   );
 }
