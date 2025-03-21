@@ -19,7 +19,7 @@ function Page25() {
 
   // Lista de 100 razones
   const reasons = [
-    "1. Nos volvimos a buscar",
+    "1. Siempre nos volvimos a amar",
     "2. Te amo",
     "3. Tu amor hacia mí",
     "4. Tu risa",
@@ -50,11 +50,11 @@ function Page25() {
     "29. Cada llamada",
     "30. Cada te amo",
     "31. Cada desvelada",
-    "32. Cambiaste a bien",
+    "32. Cambiamos mucho juntos, para bien ",
     "33. La forma en la que al estar en tus brazos me siento seguro",
     "34. Cada vez que hiciste todo por mí",
     "35. Cada vez que hice todo por ti",
-    "36. Cuando calmabas mis ataques de ansiedad",
+    "36. Cuando calmabas mis ataques",
     "37. Las veces que te perdoné",
     "38. Cada vez que nos buscamos",
     "39. Las veces que me perdonaste",
@@ -113,7 +113,7 @@ function Page25() {
     "92. La forma en la que nuestras naricitas se juntan",
     "93. Me tapas cuando tengo frío",
     "94. La tranquilidad que tengo al dormirme en tus brazos",
-    "95. Nuestro primer beso",
+    "95. Nuestro primer beso en un bus",
     "96. Nuestro primer te amo",
     "97. El miedo que tenemos de perdernos el uno al otro",
     "98. Tu esencia",

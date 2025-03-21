@@ -26,6 +26,7 @@ import Page22 from "./pages/Page22";
 import Page23 from "./pages/Page23";
 import Page24 from "./pages/Page24";
 import Page25 from "./pages/Page25";
+import Page26 from "./pages/Page26";
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false); // Estado para controlar la reproducción de la música
@@ -37,6 +38,7 @@ function App() {
     "/imgs/cancion1.mp3",
     "/imgs/cancion2.mp3",
     "/imgs/cancion3.mp3",
+    "/imgs/cancion4.mp3",
   ];
 
   // Configura el audio para que se reproduzca en secuencia
@@ -77,14 +79,20 @@ function App() {
 
   // Borra la clave "valorAceptado" cuando se cierra la pestaña
   useEffect(() => {
-    const handleBeforeUnload = () => {
+    const handleBeforeUnload = (event) => {
+      localStorage.removeItem("valorAceptado");
+    };
+
+    const handlePageHide = (event) => {
       localStorage.removeItem("valorAceptado");
     };
 
     window.addEventListener("beforeunload", handleBeforeUnload);
+    window.addEventListener("pagehide", handlePageHide);
 
     return () => {
       window.removeEventListener("beforeunload", handleBeforeUnload);
+      window.removeEventListener("pagehide", handlePageHide);
     };
   }, []);
 
@@ -124,6 +132,7 @@ function App() {
         <Route path="/page/23" element={<Page23 />} />
         <Route path="/page/24" element={<Page24 />} />
         <Route path="/page/25" element={<Page25 />} />
+        <Route path="/page/26" element={<Page26 />} />
       </Routes>
     </Router>
   );

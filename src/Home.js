@@ -33,7 +33,7 @@ function Home({ isPlaying, startMusic }) {
               Se qué capaz ya no tenga nada que ver en tu vida o ya no sientas
               nada y perdón por la intensidad, pero como te dije, iba a estar
               contigo en tu cumpleaños y me gusta cumplir las promesas, así que
-              te hice esto. No lo tomes a mal.
+              te hice esto. No lo tomes a mal. Baja a la mitad el volumen de la compu por si acaso
             </p>
             <button className="aviso-button" onClick={handleAceptar}>
               Aceptar
@@ -60,9 +60,9 @@ function Home({ isPlaying, startMusic }) {
       {/* Contenedor de botones centrado */}
       <div className="home-container">
         <div className="home-buttons">
-          {[...Array(25)].map((_, index) => (
+          {[...Array(26)].map((_, index) => (
             <Link key={index} to={`/page/${index + 1}`} className="home-button">
-                {index + 1 <= 23 ? index + 1 : "Extra"}
+                {index + 1 === 24 ? "Carta 💌 " : index + 1 === 26 ? "🌻" : index + 1 <= 23 ? index + 1 : "Extra"}
             </Link>
           ))}
         </div>
